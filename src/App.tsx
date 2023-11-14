@@ -1,26 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import proccessingMatch from "./components/ProccessingMatch";
+import MatchesTable from "./components/MatchesTable";
+import RoundesTable from "./components/RoundesTable";
 
-function App() {
+// Process the matches before rendering the App
+proccessingMatch();
+
+// Main App component
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <RoundesTable />
+      <MatchesTable />
     </div>
   );
-}
+};
 
 export default App;
