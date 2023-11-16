@@ -6,7 +6,7 @@ import RoundesTable from "./components/RoundesTable";
 proccessingMatch();
 
 // Main App component
-const App: React.FC = () => {
+const App = () => {
   return (
     <div>
       <RoundesTable />

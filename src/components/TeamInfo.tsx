@@ -31,9 +31,6 @@ export const createTeam = (id: number, name: string): Team => ({
   strength: 0,
 });
 
-// Object to store scores, initially empty
-export const typeScoreObject: { [key: string]: number } = {};
-
 // Teams with initial values created using the createTeam function
 export const teamA: Team = createTeam(1, "Team A");
 export const teamB: Team = createTeam(2, "Team B");
